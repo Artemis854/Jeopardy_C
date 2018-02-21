@@ -18,6 +18,9 @@ struct player {
     int score;
 };
 
+// Processes the answer from the user containing what is or who is and tokenizes it to retrieve the answer.
+extern void initialize_players(struct player *players, int NUM_PLAYERS);
+
 // Returns true if the player name matches one of the existing players
 extern bool player_exists(struct player *players, int num_players, char *name);
 
